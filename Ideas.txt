@@ -1,0 +1,44 @@
+---------------------------------------------------------------
+| 9 |                           x|           EVENTS           |
+| 8 |                        x   |-----------------------------
+| 7 |                     x      |  1) l,{#########},{##:##}  |
+| 6 |                  x         |  2) l,{#########},{##:##}  |
+| 5 |               x            |  3) l,{#########},{##:##}  |
+| 4 |            x               |  4) l,{#########},{##:##}  |
+| 3 |         x                  |  5) l,{#########},{##:##}  |
+| 2 |      x                     |  6) l,{#########},{##:##}  |
+| 1 |   x                        |  7) l,{#########},{##:##}  |
+| 0 |x                           |  8) l,{#########},{##:##}  |
+|--------------------------------|  9) l,{#########},{##:##}  |
+| l |0  1  2  3  4  5  6  7  8  9| 10) l,{#########},{##:##}  |
+|--------------------------------| 11) l,{#########},{##:##}  |
+| DAY: {#########} TIME: {##:##} | 12) l,{#########},{##:##}  |
+| SPEED: {#}                     | 13) l,{#########},{##:##}  |
+|--------------------------------| 14) l,{#########},{##:##}  |
+|            COMMANDS            | 15) l,{#########},{##:##}  |
+|--------------------------------| 16) l,{#########},{##:##}  |
+| SCHEDULE EVENT: S C,O,DAY,TIME | 17) l,{#########},{##:##}  |
+| REMOVE EVENT: R #              | 18) l,{#########},{##:##}  |
+| CHANGE SIM SPEED : C           | 19) l,{#########},{##:##}  |
+--------------------------------------------------------------
+
+l = next char with color
+C = char
+O = color
+R = REMOVE
+S = schedule
+C = change
+
+MONDAY
+TUESDAY
+WEDNESDAY
+THURSDAY
+FRIDAY
+SATURDAY
+SUNDAY
+
+EVENTS shows the next executed event at the top. When one is added, they are organized by time.
+
+Decrease color intensity as time goes on until the end of it's duration
+
+the way to do it would probably to have two processes, one that handles input A, and one that does the printing B. Whenever A gets a new input, kill B and restart it with the new input
